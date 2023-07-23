@@ -31,7 +31,7 @@ https://templatemo.com/tm-551-stand-blog
   </head>
 
   <body>
-    <?php get_header() ?>
+    <?php get_header(); ?>
     <!-- Banner Starts Here -->
     <div class="main-banner header-text">
       <div class="container-fluid">
