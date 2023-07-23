@@ -18,25 +18,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.php">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="<?php bloginfo('template_directory') ?>/about.php">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="<?php bloginfo('template_directory') ?>/blog.php">Blog Entries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="<?php bloginfo('template_directory') ?>/post-details.php">Post Details</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="<?php bloginfo('template_directory') ?>/contact.php">Contact Us</a>
-              </li>
-            </ul>
+               <?php 
+                    wp_nav_menu(
+                        array('theme_location' => 'primary-menu', 'menu_class' => 'nav')
+                    )
+               ?> 
           </div>
         </div>
       </nav>
